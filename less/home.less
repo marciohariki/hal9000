@@ -1,0 +1,149 @@
+/*********** GENERAL STYLES ***********/
+
+h1, h2, h3, h4, h5, h6, p, li {
+  font-family: RobotoDraft,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+
+
+/*********** PARALLAX STYLES ***********/
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: all 1s ease-in-out;
+  perspective-origin-x: 100%;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin-x: 100%;
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+
+}
+
+
+/********* SLIDER BLOCK **********/
+.slider_block {
+
+  z-index: -1;
+  background-color: black;
+}
+
+.slider_block_back {
+  position: absolute !important;
+  height: 100vh;
+  transform: translateZ(-1px) scale(2);
+  // background-image: url("/static/images/landing-bg.jpg");
+  opacity: 0.6;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.slider_block_content {
+  position: relative;
+  top: 50%;
+  text-align: left;
+  transform: translateY(-50%) translateZ(0) scale(1);
+  h1 {
+    font-size: 44px;
+    color: white;
+    font-weight: normal;
+    margin-bottom: 20px
+  }
+  h2 {
+    font-size: 24px;
+    color: white;
+    font-weight: normal;
+    margin-bottom: 40px;
+  }
+}
+
+/********* SERVICES BLOCK **********/
+
+.services_block {
+
+  z-index: 1;
+  background-color: white;
+  padding-bottom: 40px;
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    margin-bottom: 100px;
+    font-weight: normal;
+  }
+}
+
+.services_content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.services_card {
+  margin-bottom: 50px;
+
+  i {
+    display: inline-block;
+    width: 30%;
+    font-size: 40px;
+    padding: 30px 20px;
+    float: left;
+  }
+}
+
+.services_card_content{
+    width: 68%;
+    display: inline-block; 
+}
+
+/********* SELLER BLOCK **********/
+
+.seller_block {
+
+  z-index: -1;
+  background-color: black;
+}
+
+.seller_block_back {
+  height: 100vh;
+  transform: translateZ(-1px) scale(2);
+  background-image: url("/static/images/landing-bg-2.jpg");
+  opacity: 0.7;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.seller_block_content {
+  position: relative;
+  top: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  transform: translateY(-50%) translateZ(0) scale(1);
+  h1 {
+    font-size: 42px;
+    color: white;
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: 24px;
+    color: white;
+  }
+}
+
